@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: "Dancing Script", cursive;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+
+.aboutImg img{
+    width: 100%;
+    height: 450px;
+}
+
+
+
+.teamImg img {
+    width: 150px; /* Set a fixed width */
+    height: 150px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image is cropped to fit proportionally */
+  }
+
+.whatsapp{
+    font-size: 54px;
+    position: fixed;
+    top: 500px;
+    bottom: 30px;
+    padding: 5px;
+    float: right;
+
+}
+
+/* Preloader Styles */
+/* Preloader Styles */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#preloader .spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #ddd;
+    border-top: 6px solid indigo;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+#preloader .text {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    color: #3498db;
+    letter-spacing: 3px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Media query for mobile screens (up to 768px wide) */
+@media screen and (max-width: 768px) {
+    .carousel-item img { 
+        max-width: 100%; /* Adjust to fit the screen */
+        margin: 10px auto; /* Add some margin */
+        border-radius: 10px; /* Optional: Add rounded corners for a better look */
+        height: 50vh;
+    }
+}
+
+/* Media query for very small screens (up to 480px wide) */
+@media screen and (max-width: 480px) {
+    .carousel-item img {
+        max-width: 90%; /* Slight padding */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+        height: 50vh;
+    }
+}
